@@ -18,4 +18,11 @@ const DespairCounterLogic = (function () {
   function getDespairCount () {
     return despair;
   }
+
+  return {
+    increaseDespair,
+    decreaseDespair,
+    noDespair,
+    getDespairCount,
+  };
 })();
