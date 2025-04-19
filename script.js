@@ -41,7 +41,11 @@ increaseBtn.addEventListener('click', () => {
 decreaseBtn.addEventListener('click', () => {
   DespairCounterLogic.decreaseDespair();
   console.log(DespairCounterLogic.getDespairCount());
-  visualCount.textContent = DespairCounterLogic.getDespairCount();
+  if(DespairCounterLogic.getDespairCount() <= 0) {
+    visualCount.textContent = DespairCounterLogic.getDespairCount() + '  (Theoretical)';
+  } else {
+    visualCount.textContent = DespairCounterLogic.getDespairCount();
+  }
 });
 
 resetBtn.addEventListener('click', () => {
