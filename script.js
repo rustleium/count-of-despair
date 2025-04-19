@@ -36,3 +36,8 @@ increaseBtn.addEventListener('click', () => {
   DespairCounterLogic.increaseDespair();
   console.log(DespairCounterLogic.getDespairCount());
 });
+
+decreaseBtn.addEventListener('click', () => {
+  DespairCounterLogic.decreaseDespair();
+  console.log(DespairCounterLogic.getDespairCount());
+});
