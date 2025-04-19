@@ -41,3 +41,8 @@ decreaseBtn.addEventListener('click', () => {
   DespairCounterLogic.decreaseDespair();
   console.log(DespairCounterLogic.getDespairCount());
 });
+
+resetBtn.addEventListener('click', () => {
+  DespairCounterLogic.noDespair();
+  console.log(DespairCounterLogic.getDespairCount());
+});
