@@ -35,6 +35,7 @@ const visualCount = document.querySelector('.visualCount');
 increaseBtn.addEventListener('click', () => {
   DespairCounterLogic.increaseDespair();
   console.log(DespairCounterLogic.getDespairCount());
+  visualCount.textContent = DespairCounterLogic.getDespairCount();
 });
 
 decreaseBtn.addEventListener('click', () => {
