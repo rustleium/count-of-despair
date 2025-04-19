@@ -26,3 +26,8 @@ const DespairCounterLogic = (function () {
     getDespairCount,
   };
 })();
+
+const increaseBtn = document.querySelector('.increaseBtn');
+const decreaseBtn = document.querySelector('.decreaseBtn');
+const resetBtn = document.querySelector('.resetBtn');
+const visualCount = document.querySelector('.visualCount');
